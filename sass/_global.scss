@@ -1,0 +1,56 @@
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+ul li {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: $text-color;
+}
+
+#login {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: $bg-color;
+}
+
+#star {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    background: $bg-color;
+}
+
+h2 {
+    font-family: $font;
+    font-style: normal;
+    font-weight: 700;
+}
+
+h6 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}

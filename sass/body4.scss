@@ -1,0 +1,85 @@
+.body4 {
+    position: absolute;
+    top: 2250px;
+    .flex-container {
+        max-width: 1110px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        div {
+            background-color: #FFFFFF;
+            width: 260px;
+            height: 368px;
+            margin: 30px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+        h6 {
+            position: static;
+            height: 24px;
+            left: 0px;
+            right: 0px;
+            bottom: 52px;
+            /* H6 - bold 18 (24. 0.1px) */
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            /* identical to box height, or 133% */
+            text-align: center;
+            letter-spacing: 0.1px;
+            /* Light / Black */
+            color: $text-color;
+            /* Inside auto layout */
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            margin: 12px 0px;
+        }
+        p {
+            position: static;
+            height: 40px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            /* Body 2 - regular 14 (20, 0.2px) */
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            /* or 143% */
+            text-align: center;
+            letter-spacing: 0.2px;
+            /* Light / Black */
+            color: $text-color;
+            /* Inside auto layout */
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+            margin: 12px 0px;
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .body4 {
+        .flex-container {
+            display: grid;
+            grid-template-columns: auto;
+            align-items: center;
+            // grid-template-rows: (2);
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .body4 {
+        margin-top: -25%;
+        .flex-container {
+            display: grid;
+            grid-template-columns: auto auto;
+            margin-left: 10%;
+        }
+    }
+}

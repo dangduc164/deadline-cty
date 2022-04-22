@@ -1,0 +1,116 @@
+.body3 {
+    position: absolute;
+    width: 1110px;
+    height: 440px;
+    top: 1775px;
+    .col-img {
+        float: right;
+    }
+    .col-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        position: absolute;
+        width: 540px;
+        height: 290px;
+        top: calc(50% - 290px/2);
+        .content-body3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px;
+            position: absolute;
+            width: 540px;
+            height: 290px;
+            left: 0px;
+            top: calc(50% - 242px);
+            h3 {
+                float: left;
+                position: static;
+                height: 120px;
+                left: 0px;
+                right: 0px;
+                top: calc(50% - 120px/2 - 85px);
+                letter-spacing: 0.1px;
+                color: $text-color;
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+                margin: 56px 0px;
+            }
+        }
+    }
+    .item-body3 {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        position: static;
+        height: 114px;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 56px 0px;
+        .iteam-box {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+            position: static;
+            width: 255px;
+            height: 114px;
+            left: 0px;
+            top: 10px;
+            /* Inside auto layout */
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            margin: 0px 30px;
+        }
+        .iteam-truck {
+            /* Auto layout */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+            position: static;
+            width: 255px;
+            height: 114px;
+            left: 285px;
+            top: 0px;
+            /* Inside auto layout */
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+            margin: 0px 30px;
+        }
+    }
+}
+
+@media all and (max-width: 768px) {
+    .body3 {
+        .img-body3 {
+            display: none;
+        }
+        .col-text {
+            margin-left: 5%;
+            text-align: center;
+            margin-top: 2px;
+            font-size: 28px;
+            position: static;
+            transform: translate(50px);
+            .item-body3 {
+                margin: 0;
+                align-items: center;
+                p {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}

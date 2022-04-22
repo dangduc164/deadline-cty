@@ -1,0 +1,51 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+    outline: none;
+}
+
+input {
+    line-height: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+input {
+    line-height: normal;
+}
+
+button,
+label {
+    cursor: pointer;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Mulish', sans-serif;
+    color: #373F41;
+    right: 165px;
+    left: 165px;
+}

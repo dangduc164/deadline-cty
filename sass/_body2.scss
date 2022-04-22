@@ -1,0 +1,170 @@
+.body2 {
+    position: absolute;
+    height: 440px;
+    top: 1221px;
+    width: 70em;
+    .col-ing {
+        position: absolute;
+        height: 440px;
+        left: 0px;
+        right: 570px;
+        top: calc(50% - 440px/2);
+    }
+    .col-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        position: absolute;
+        width: 540px;
+        height: 364px;
+        right: 0px;
+        top: -70px;
+        .content-body2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px;
+            position: static;
+            width: 540px;
+            height: 218px;
+            left: 0px;
+            top: 0px;
+            /* Inside auto layout */
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            margin: 56px 0px;
+            h3 {
+                position: static;
+                height: 120px;
+                left: 0px;
+                right: 0px;
+                top: calc(50% - 120px/2 - 49px);
+                /* H3 - bold 32 (40, 0.1px) */
+                font-style: normal;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 40px;
+                /* or 125% */
+                letter-spacing: 0.1px;
+                /* Inside auto layout */
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+                margin: 32px 0px;
+            }
+            p {
+                position: static;
+                height: 66px;
+                left: 0px;
+                right: 0px;
+                top: calc(50% - 66px/2 + 76px);
+                /* Body 1 - regular 16 (22, 0.3px) */
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+                /* or 138% */
+                letter-spacing: 0.3px;
+                /* Light / Gray dark */
+                color: $heading-color;
+                /* Inside auto layout */
+                flex: none;
+                order: 1;
+                flex-grow: 0;
+                margin: 32px 0px;
+            }
+        }
+        .seach {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px;
+            position: static;
+            width: 540px;
+            height: 90px;
+            left: 0px;
+            top: 274px;
+            /* Inside auto layout */
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+            margin: 56px 0px;
+            .input-seach {
+                position: static;
+                width: 540px;
+                height: 42px;
+                left: 0px;
+                top: 0px;
+                /* Inside auto layout */
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+                margin: 16px 0px;
+                input {
+                    position: absolute;
+                    width: 377px;
+                    height: 42px;
+                    left: 0px;
+                    &:hover {
+                        background-color: beige;
+                    }
+                }
+                a {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 18px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    padding: 12px 18px;
+                    position: absolute;
+                    width: 139px;
+                    height: 42px;
+                    left: 401px;
+                    /* Accent / Default */
+                    background: $bg-color;
+                    color: #FFFFFF;
+                    text-align: center;
+                    &:hover {
+                        background-color: aqua;
+                    }
+                }
+            }
+            p {
+                position: static;
+                height: 32px;
+                left: 0px;
+                right: 0px;
+                top: calc(50% - 32px/2 + 29px);
+                /* Small - semibold 12 (16, 0.2px) */
+                font-size: 12px;
+                line-height: 16px;
+                /* or 133% */
+                letter-spacing: 0.2px;
+                /* Light / Gray dark */
+                color: $heading-color;
+                /* Inside auto layout */
+                flex: none;
+                order: 1;
+                flex-grow: 0;
+                margin: 16px 0px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 768px) {
+    .body2 {
+        img {
+            display: none;
+        }
+        .col-text {
+            font-size: 28px;
+            position: static;
+            transform: translate(70px, -20%);
+        }
+    }
+}
