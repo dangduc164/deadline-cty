@@ -71,6 +71,11 @@
             order: 0;
             flex-grow: 0;
             margin: 0px 30px;
+            P {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+            }
         }
         .iteam-truck {
             /* Auto layout */
@@ -88,6 +93,11 @@
             order: 1;
             flex-grow: 0;
             margin: 0px 30px;
+            p {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+            }
         }
     }
 }
@@ -111,6 +121,15 @@
                     font-size: 17px;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .body3 {
+        max-width: 100%;
+        img {
+            max-width: 90%;
         }
     }
 }

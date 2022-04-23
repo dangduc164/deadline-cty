@@ -2,7 +2,8 @@
     position: absolute;
     height: 440px;
     top: 1221px;
-    width: 70em;
+    display: flex;
+    width: 1110px;
     .col-ing {
         position: absolute;
         height: 440px;
@@ -165,6 +166,36 @@
             font-size: 28px;
             position: static;
             transform: translate(70px, -20%);
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .body2 {
+        max-width: 100%;
+        img {
+            max-width: 90%
+        }
+        .col-text {
+            max-width: 80%;
+        }
+        .col-text {
+            .content-body2 {
+                width: 448px;
+            }
+            .seach {
+                width: 475px;
+                .input-seach {
+                    input {
+                        margin-left: 10%;
+                        width: 270px;
+                    }
+                    a {
+                        width: 100px;
+                        left: 367px;
+                    }
+                }
+            }
         }
     }
 }
